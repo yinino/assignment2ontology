@@ -1,0 +1,1256 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.hotpot.com/ontologies/hotpot.owl#"
+     xml:base="http://www.hotpot.com/ontologies/hotpot.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.hotpot.com/ontologies/hotpot.owl">
+        <rdfs:label>this is my hotpot ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022">
+        <rdfs:label xml:lang="en">location</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b -->
+
+    <owl:AnnotationProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e -->
+
+    <owl:AnnotationProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e">
+        <rdfs:label xml:lang="en">synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620 -->
+
+    <owl:ObjectProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8a358eff_7a9d_4560_a60e_cd6ed508f279"/>
+        <rdfs:range rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8a358eff_7a9d_4560_a60e_cd6ed508f279"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A hot pot contains Asian ingredients.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">HasIngredients</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_483604a3_de0b_43ac_b8dd_deb2405e3329 -->
+
+    <owl:ObjectProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_483604a3_de0b_43ac_b8dd_deb2405e3329">
+        <owl:inverseOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a soupbase is the soup base of a kind of hot pot.
+For example, mushroom soup is the soup base of yunnanmushroom hot pot</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">IsSoupBaseOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736 -->
+
+    <owl:ObjectProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736">
+        <rdfs:range rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_12d115e6_2025_46d4_abe8_bdb387756730"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>where the hot pot orginates from</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">HasPlaceOfOrigin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a5065dc9_63ca_4f9c_bb59_a4d079aff4b3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a5065dc9_63ca_4f9c_bb59_a4d079aff4b3">
+        <rdfs:domain rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>the time needed in boiling water</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">NeedCookTime</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a7ab9138_5fd7_4623_9e6a_266f44a3dfc3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a7ab9138_5fd7_4623_9e6a_266f44a3dfc3">
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>The food is eaten with condiments. Hot pot needs condiment.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">HasCondiment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7 -->
+
+    <owl:ObjectProperty rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7">
+        <rdfs:domain rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+        <rdfs:range rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_90825bf9_e392_415a_9842_a4f0d2b2aeb6"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a hot pot needs to have soupbase</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">HasSoupBase</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0098ab35_4078_4fa1_a2d3_ae6fd1431beb -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0098ab35_4078_4fa1_a2d3_ae6fd1431beb">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Chopped pumpkin slices</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Pumpkin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0176c279_d5ff_457d_b02d_a2e89526e28c -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0176c279_d5ff_457d_b02d_a2e89526e28c">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>noodles made from wheat flour</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">ChineseNoodle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_06b2fb9b_5239_489e_a663_0b624b1ca512 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_06b2fb9b_5239_489e_a663_0b624b1ca512">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a green vegetable</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Spinach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0f681bef_54af_4255_937b_56a980c291fd -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0f681bef_54af_4255_937b_56a980c291fd">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736"/>
+                        <owl:hasValue rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_4ce222ce_5311_41e7_a8d3_6cbdeba8c0e8"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a7ab9138_5fd7_4623_9e6a_266f44a3dfc3"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_351153d8_f561_4af5_9cff_c6578b27707c"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_9a27d42d_2596_49b2_9da0_7598b038de01"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_b05c7c99_86e6_4956_89e4_9c7e7c1261ee"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_d0960e1e_e7b5_41f4_9898_f0a9496449a6"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_dfb02a96_e55e_41ba_8224_66355edf0dfd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_4ce222ce_5311_41e7_a8d3_6cbdeba8c0e8"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a spicy hot pot in Sichuan</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>Sichuan Ma La Hot Pot</OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>
+        <rdfs:label xml:lang="en">SichuanSpicyHotPot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a5065dc9_63ca_4f9c_bb59_a4d079aff4b3"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7a4f18a1_9103_4c72_a91a_96654829c395"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>made by soy milk and pressed into soft white blocks</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>bean curd</OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>
+        <rdfs:label xml:lang="en">Tofu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_12d115e6_2025_46d4_abe8_bdb387756730 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_12d115e6_2025_46d4_abe8_bdb387756730">
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>citiy or province</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_13ad6d2f_ec1b_4b9c_a7a1_3001771cb13e -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_13ad6d2f_ec1b_4b9c_a7a1_3001771cb13e">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a leaf vegetable</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Lettuce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_166356a4_f4bb_46a5_a655_5cd85ddf0703 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_166356a4_f4bb_46a5_a655_5cd85ddf0703">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A kind of seafood</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Fish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1c46be7f_6d1d_4898_b535_ff0827fc2376 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1c46be7f_6d1d_4898_b535_ff0827fc2376">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>fish are shredded or pounded and mix with salt</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Fishballs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_27016a4d_8d1b_4571_a6cc_aa80271bc4e4 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_27016a4d_8d1b_4571_a6cc_aa80271bc4e4">
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>recommened cooking time boiling water</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Cooktime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_27d750bb_3fd2_4d75_b065_b506a05ab565 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_27d750bb_3fd2_4d75_b065_b506a05ab565">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>thinly sliced pork</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">SlicedPork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_2d3d068a_6d84_4c66_abe9_167fffa4f332 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_2d3d068a_6d84_4c66_abe9_167fffa4f332">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>fresh tofu</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">SoftTofu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_3009cb7f_0e79_4005_94ac_e91f65c2d9e4 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_3009cb7f_0e79_4005_94ac_e91f65c2d9e4">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A condiment made by mashed garlic</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">ChoppedGarlic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_31ec3390_a322_4076_9b0f_69cebf6eb7d7 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_31ec3390_a322_4076_9b0f_69cebf6eb7d7">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>noodles made with vegetable juice</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">VegetableNoodle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_341b3698_4f52_46ea_bc44_2c632a822121 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_341b3698_4f52_46ea_bc44_2c632a822121">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>fleshy, spore-bearing fruiting body of a fungus</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Mushroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_351153d8_f561_4af5_9cff_c6578b27707c -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_351153d8_f561_4af5_9cff_c6578b27707c">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A kind of condiment made with vegetable oil and chili peppers</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Chilioil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_40b139b3_1d46_453e_ade4_e729fcc44ed8 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_40b139b3_1d46_453e_ade4_e729fcc44ed8">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Thinly sliced beef</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">SlicedBeef</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4134f38b_15f3_4f67_b539_2a7c44d39937 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4134f38b_15f3_4f67_b539_2a7c44d39937">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Chopped sweet potato slices</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Sweet Potato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a5065dc9_63ca_4f9c_bb59_a4d079aff4b3"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7a4f18a1_9103_4c72_a91a_96654829c395"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a staple food</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Noodles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_49ffbdab_5c0f_4d9d_9e43_30cc4e24f17f -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_49ffbdab_5c0f_4d9d_9e43_30cc4e24f17f">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A black vinegar made from rice, wheat, millet, and sorghum.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Vinegar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4a199a86_5b3c_4434_9fc3_b965f26dd38b -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4a199a86_5b3c_4434_9fc3_b965f26dd38b">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>thinly sliced  lamb</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">SlicedLamb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4be06024_8683_4249_aeb7_b44b08633bdb -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4be06024_8683_4249_aeb7_b44b08633bdb">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a marine algae.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Seaweed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4f701116_9163_4b63_99e3_3e9c818f579c -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4f701116_9163_4b63_99e3_3e9c818f579c">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_90825bf9_e392_415a_9842_a4f0d2b2aeb6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_483604a3_de0b_43ac_b8dd_deb2405e3329"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_6d4abbeb_6bf4_40eb_ac45_e90f25e8a7b8"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>The two kinds of soup are combined in a pot, usually half is spicy soup and half is half is original soup. There is a partition plate in the pot or another inner pot.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>Original and Half Soup</OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>
+        <rdfs:label xml:lang="en">Half-HalfSoup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_580298e6_f0b7_4ba7_8338_44ffb4952ec7 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_580298e6_f0b7_4ba7_8338_44ffb4952ec7">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Made of beef</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Beefballs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_5b04a133_daca_48ce_b0f7_dc4ed06da785 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_5b04a133_daca_48ce_b0f7_dc4ed06da785">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a green leaf vegetable</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Tong Ho</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_5f69afcd_7f9e_444b_a455_b685a1ffc543 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_5f69afcd_7f9e_444b_a455_b685a1ffc543">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A condiment made of soybeans</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Soysauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_622cf53c_c6f4_48bc_bc23_4449f2f3af8b -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_622cf53c_c6f4_48bc_bc23_4449f2f3af8b">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_341b3698_4f52_46ea_bc44_2c632a822121"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a edible mushroom</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Straw Mushroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_643d530e_d727_42e4_85c6_4589030a22bf -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_643d530e_d727_42e4_85c6_4589030a22bf">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Japansese thick wheat flour noodle</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Udon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_6d09c87f_85fd_411c_93f3_04e414ef143b -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_6d09c87f_85fd_411c_93f3_04e414ef143b">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_90825bf9_e392_415a_9842_a4f0d2b2aeb6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_483604a3_de0b_43ac_b8dd_deb2405e3329"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c05a8f77_a16c_4ba2_a51f_300a4f07b36d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>nearly 30 kinds of mushroom boilded in the water</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">MushroomSoup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_6d4abbeb_6bf4_40eb_ac45_e90f25e8a7b8 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_6d4abbeb_6bf4_40eb_ac45_e90f25e8a7b8">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7"/>
+                        <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4f701116_9163_4b63_99e3_3e9c818f579c"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736"/>
+                        <owl:hasValue rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_44f3f64a_4f6c_4e1e_902d_380e17bd59f2"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a7ab9138_5fd7_4623_9e6a_266f44a3dfc3"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_351153d8_f561_4af5_9cff_c6578b27707c"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_9a27d42d_2596_49b2_9da0_7598b038de01"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_b05c7c99_86e6_4956_89e4_9c7e7c1261ee"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_d0960e1e_e7b5_41f4_9898_f0a9496449a6"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4f701116_9163_4b63_99e3_3e9c818f579c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_44f3f64a_4f6c_4e1e_902d_380e17bd59f2"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A hot pot that combines two kinds of soupbase.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">ChongqingYuanYangHotPot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7152446b_bfe7_490f_9664_d7ed9ac8c4b7 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7152446b_bfe7_490f_9664_d7ed9ac8c4b7">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_90825bf9_e392_415a_9842_a4f0d2b2aeb6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_483604a3_de0b_43ac_b8dd_deb2405e3329"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_86524b4d_dcf1_4ced_8dc9_430e55fd77b9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Soup made by boiling water with the addition of meat bones, herbs, and seasoning</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>Plain Soup, White Soup</OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>
+        <rdfs:label xml:lang="en">OriginalSoup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7443caa3_aaca_42ff_9e6c_c57e7e64e521 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7443caa3_aaca_42ff_9e6c_c57e7e64e521">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>frozen from fresh tofu
+Frozen tofu is porous and flexible.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">FrozenTofu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7a4f18a1_9103_4c72_a91a_96654829c395 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7a4f18a1_9103_4c72_a91a_96654829c395">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_27016a4d_8d1b_4571_a6cc_aa80271bc4e4"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a period of time equal to sixty seconds</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">minutes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7d5e4de0_5b8f_43e4_ae84_417269ec689c -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7d5e4de0_5b8f_43e4_ae84_417269ec689c">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A kind of condiment that makes food salty</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Salt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_86524b4d_dcf1_4ced_8dc9_430e55fd77b9 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_86524b4d_dcf1_4ced_8dc9_430e55fd77b9">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736"/>
+                        <owl:hasValue rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_3b066edb_641e_4075_9cc6_6de26d1f736d"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a7ab9138_5fd7_4623_9e6a_266f44a3dfc3"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_3009cb7f_0e79_4005_94ac_e91f65c2d9e4"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_49ffbdab_5c0f_4d9d_9e43_30cc4e24f17f"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_5f69afcd_7f9e_444b_a455_b685a1ffc543"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_b05c7c99_86e6_4956_89e4_9c7e7c1261ee"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_bb64cca9_b1b9_469c_8aa6_237bad9f2204"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e2993dac_80f8_446b_95c3_519380d74128"/>
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e8ce4912_ff48_4b10_93ea_58bd6261c976"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7152446b_bfe7_490f_9664_d7ed9ac8c4b7"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_3b066edb_641e_4075_9cc6_6de26d1f736d"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>One typical Northern style hot pot</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">BeijingHotPot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8a358eff_7a9d_4560_a60e_cd6ed508f279 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8a358eff_7a9d_4560_a60e_cd6ed508f279">
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Things that people can eat</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8a358eff_7a9d_4560_a60e_cd6ed508f279"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Things that can add favor to food</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>dipping sauce</OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>
+        <rdfs:label xml:lang="en">Condiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8ee4641a_fb36_4a6a_8cee_d0e57e9f196b -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8ee4641a_fb36_4a6a_8cee_d0e57e9f196b">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>made of shrimp</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Shrimpballs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_90825bf9_e392_415a_9842_a4f0d2b2aeb6 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_90825bf9_e392_415a_9842_a4f0d2b2aeb6">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8a358eff_7a9d_4560_a60e_cd6ed508f279"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_483604a3_de0b_43ac_b8dd_deb2405e3329"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Soup used to contain ingredients. It is made by boiling water with a combination of herbs and seasoning.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>broth</OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>
+        <rdfs:label xml:lang="en">SoupBase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_9a27d42d_2596_49b2_9da0_7598b038de01 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_9a27d42d_2596_49b2_9da0_7598b038de01">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A kind of herb in China</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Coriander</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_9decf00a_25d4_418c_9314_1385973fb794 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_9decf00a_25d4_418c_9314_1385973fb794">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A kind of seafood</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Prawns</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_9fd16298_7633_421f_9b10_8297afb42775 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_9fd16298_7633_421f_9b10_8297afb42775">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>made of starch and white fish, and shaped like crab.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">CrabSticks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8a358eff_7a9d_4560_a60e_cd6ed508f279"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Ingredients in Asian cuisine</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Ingredients</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_b05c7c99_86e6_4956_89e4_9c7e7c1261ee -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_b05c7c99_86e6_4956_89e4_9c7e7c1261ee">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A condiment made by chopped green onion</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>green onion</OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>
+        <rdfs:label xml:lang="en">ChoppedScallions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_bb64cca9_b1b9_469c_8aa6_237bad9f2204 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_bb64cca9_b1b9_469c_8aa6_237bad9f2204">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Hosin sauce is a thick sauce that includes chili, garlic and vinegar. 
+Hoisin sauce is sweet and salty. 
+Hoisin means seafood in China, but hoisin sauce does not contain seafood.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Hoisinsauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c05a8f77_a16c_4ba2_a51f_300a4f07b36d -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c05a8f77_a16c_4ba2_a51f_300a4f07b36d">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736"/>
+                        <owl:hasValue rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_d5976735_34f1_4bd6_83e0_a4bffa7005ee"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_341b3698_4f52_46ea_bc44_2c632a822121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a7ab9138_5fd7_4623_9e6a_266f44a3dfc3"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_6d09c87f_85fd_411c_93f3_04e414ef143b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_7e082d11_4cd8_4880_94aa_762eb3c17736"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_d5976735_34f1_4bd6_83e0_a4bffa7005ee"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A hot pot that uses mushroom soup as soup base</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">YunnanMushroomHotPot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c1503d65_8d80_4c92_92ac_7db4db949535 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c1503d65_8d80_4c92_92ac_7db4db949535">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>chopped Chinese preserving melon slices</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Winter melon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c24c24cc_4abd_471a_92ed_ba2a44b45b2a -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c24c24cc_4abd_471a_92ed_ba2a44b45b2a">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A kind of seafood</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Cockles</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c417c114_6db3_4421_8ca8_820986af7203 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c417c114_6db3_4421_8ca8_820986af7203">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Chopped potato slices</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Potato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c52828a6_be3c_4d87_a11b_bdfea2913dbe -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c52828a6_be3c_4d87_a11b_bdfea2913dbe">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Chinese cabbage</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Napa cabbage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cf98ea89_293c_4f00_9291_a44ad487d2bd">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8a358eff_7a9d_4560_a60e_cd6ed508f279"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_08580fc7_8069_46bd_bcb1_fd84f6a99620"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a7ab9138_5fd7_4623_9e6a_266f44a3dfc3"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_aec162c1_c0f2_42a0_8c82_ecb540c409b7"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_90825bf9_e392_415a_9842_a4f0d2b2aeb6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A simmering pot of soup stock at the dining table. People sit ariound the table and ingredients are put into the simmering pot.</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">hotpot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a5065dc9_63ca_4f9c_bb59_a4d079aff4b3"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7a4f18a1_9103_4c72_a91a_96654829c395"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>parts of plants</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Vegetable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_d0960e1e_e7b5_41f4_9898_f0a9496449a6 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_d0960e1e_e7b5_41f4_9898_f0a9496449a6">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A dark brown sauce made by oyster</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Oystersauce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_dc549954_feef_4cf6_9cef_70021e0cc43f -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_dc549954_feef_4cf6_9cef_70021e0cc43f">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_27016a4d_8d1b_4571_a6cc_aa80271bc4e4"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>unit of time</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">seconds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_dfb02a96_e55e_41ba_8224_66355edf0dfd -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_dfb02a96_e55e_41ba_8224_66355edf0dfd">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_90825bf9_e392_415a_9842_a4f0d2b2aeb6"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_483604a3_de0b_43ac_b8dd_deb2405e3329"/>
+                <owl:someValuesFrom rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0f681bef_54af_4255_937b_56a980c291fd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Soup loaded with Szechuan peppercorns, chilis, ginger, scallions, cinnamon, anise and fennel</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>Red Soup</OWLAnnotationProperty_4db53ba4_02bc_4e91_97dc_a88ef120513e>
+        <rdfs:label xml:lang="en">SpicySoup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e2993dac_80f8_446b_95c3_519380d74128 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e2993dac_80f8_446b_95c3_519380d74128">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>vegetable oil derived from sesame seeds</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Sesameoil</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e3674cfa_bc85_4f92_a19c_891ddac47668 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e3674cfa_bc85_4f92_a19c_891ddac47668">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_341b3698_4f52_46ea_bc44_2c632a822121"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>a edible mushroom</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Oyster Mushroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e675dd38_184e_4633_8cc9_552d1020e63f -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e675dd38_184e_4633_8cc9_552d1020e63f">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>transparent noodle made from starch and water</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">CellophaneNoodle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e8ce4912_ff48_4b10_93ea_58bd6261c976 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e8ce4912_ff48_4b10_93ea_58bd6261c976">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_8d32dba1_eeec_4291_973a_db34596927ca"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A condiment made from toasted ground hulled sesame seeds</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Sesamebutter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a5065dc9_63ca_4f9c_bb59_a4d079aff4b3"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">15</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_dc549954_feef_4cf6_9cef_70021e0cc43f"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>animal flesh</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea92a333_e92f_49f8_921f_14080a980198 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea92a333_e92f_49f8_921f_14080a980198">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Crispy Tofu</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">SpongeTofu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_a020a91e_f676_496a_9f48_a04a8f9ba15d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLObjectProperty_a5065dc9_63ca_4f9c_bb59_a4d079aff4b3"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_7a4f18a1_9103_4c72_a91a_96654829c395"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>sea life as food</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Seafood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ef5fb9de_1d44_46cb_8368_e7b919b81375 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ef5fb9de_1d44_46cb_8368_e7b919b81375">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A Chinese leaf green vegetable</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Baby Bok Choy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_f0fb604e_1b09_4178_8194_e8f9ea729934 -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_f0fb604e_1b09_4178_8194_e8f9ea729934">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>Made of soybean and looks like dried yellow sheets</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">TofuSkin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_f172d291_a1f3_4346_92cc_af62a201f23c -->
+
+    <owl:Class rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_f172d291_a1f3_4346_92cc_af62a201f23c">
+        <rdfs:subClassOf rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_341b3698_4f52_46ea_bc44_2c632a822121"/>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>long, thin white mushroom used in East Asian cuisine</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Enoki Mushroom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_3b066edb_641e_4075_9cc6_6de26d1f736d -->
+
+    <owl:NamedIndividual rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_3b066edb_641e_4075_9cc6_6de26d1f736d">
+        <rdf:type rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_12d115e6_2025_46d4_abe8_bdb387756730"/>
+        <OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022>in the north of China</OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A city in China</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Beijing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_44f3f64a_4f6c_4e1e_902d_380e17bd59f2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_44f3f64a_4f6c_4e1e_902d_380e17bd59f2">
+        <rdf:type rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_12d115e6_2025_46d4_abe8_bdb387756730"/>
+        <OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022>in the southwest of China</OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A city in China</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Chongqing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_4ce222ce_5311_41e7_a8d3_6cbdeba8c0e8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_4ce222ce_5311_41e7_a8d3_6cbdeba8c0e8">
+        <rdf:type rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_12d115e6_2025_46d4_abe8_bdb387756730"/>
+        <OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022>in the southwest of China</OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A province in China</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Sichuan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_d5976735_34f1_4bd6_83e0_a4bffa7005ee -->
+
+    <owl:NamedIndividual rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLNamedIndividual_d5976735_34f1_4bd6_83e0_a4bffa7005ee">
+        <rdf:type rdf:resource="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_12d115e6_2025_46d4_abe8_bdb387756730"/>
+        <OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022>in the southwest of China</OWLAnnotationProperty_2d160abf_43ee_4096_8836_2934c0a32022>
+        <OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>A province in China</OWLAnnotationProperty_4199cf13_7505_434e_b8f7_cc057f38677b>
+        <rdfs:label xml:lang="en">Yunnan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0098ab35_4078_4fa1_a2d3_ae6fd1431beb"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_06b2fb9b_5239_489e_a663_0b624b1ca512"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_13ad6d2f_ec1b_4b9c_a7a1_3001771cb13e"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_341b3698_4f52_46ea_bc44_2c632a822121"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4134f38b_15f3_4f67_b539_2a7c44d39937"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4be06024_8683_4249_aeb7_b44b08633bdb"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_5b04a133_daca_48ce_b0f7_dc4ed06da785"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c1503d65_8d80_4c92_92ac_7db4db949535"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c417c114_6db3_4421_8ca8_820986af7203"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_c52828a6_be3c_4d87_a11b_bdfea2913dbe"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ef5fb9de_1d44_46cb_8368_e7b919b81375"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_0176c279_d5ff_457d_b02d_a2e89526e28c"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_31ec3390_a322_4076_9b0f_69cebf6eb7d7"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_643d530e_d727_42e4_85c6_4589030a22bf"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e675dd38_184e_4633_8cc9_552d1020e63f"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_1257bfc0_e0d9_4bb6_a860_45fc49d48224"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_471f9f76_13c0_4e74_981e_54fc875ab5af"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_cfb9a874_8e99_4e7a_ad38_6430a8c8ed9f"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea8e4cba_0d33_4efa_89ec_de825d0ea36c"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ed3d9053_af66_49a0_8f37_e5b804a552c8"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_27d750bb_3fd2_4d75_b065_b506a05ab565"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_40b139b3_1d46_453e_ade4_e729fcc44ed8"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_4a199a86_5b3c_4434_9fc3_b965f26dd38b"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_580298e6_f0b7_4ba7_8338_44ffb4952ec7"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_2d3d068a_6d84_4c66_abe9_167fffa4f332"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_ea92a333_e92f_49f8_921f_14080a980198"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_f0fb604e_1b09_4178_8194_e8f9ea729934"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_622cf53c_c6f4_48bc_bc23_4449f2f3af8b"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_e3674cfa_bc85_4f92_a19c_891ddac47668"/>
+            <rdf:Description rdf:about="http://www.hotpot.com/ontologies/hotpot.owl#OWLClass_f172d291_a1f3_4346_92cc_af62a201f23c"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
